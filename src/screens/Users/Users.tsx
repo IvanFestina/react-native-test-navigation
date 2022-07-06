@@ -7,7 +7,7 @@ export function UsersScreen({route}: UsersPropsType) {
     return (
         <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
             <Text>Users Screen</Text>
-            <Text>{JSON.stringify(param, null, 2)}</Text>
+            {param && <Text>{JSON.stringify(param, null, 2)}</Text>}
             <Button title={'To Home screen'} onPress={() => navigation.navigate('Home')}>
             </Button>
         </View>
