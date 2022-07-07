@@ -18,9 +18,8 @@ export type RootType = {
     Registration: undefined
     Forgot: undefined
 }
-
+//тип дляя Navigation  мы запихиваем самый родительский самый главный.
 export type NavigationUseType = NavigationProp<RootStackParamList>
-
 export const useAppNavigation = () => useNavigation<NavigationUseType>()
 
 export type HomePropsType = NativeStackScreenProps<RootStackParamList, 'Home'>
