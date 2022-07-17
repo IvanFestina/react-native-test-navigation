@@ -17,9 +17,10 @@ export const Main = () => {
             if(route.name === 'Home') iconName = 'analytics'
             if(route.name === 'Users') iconName = 'bug'
             if(route.name === 'Details') iconName = 'car-sport'
+
             return {
                 tabBarStyle: {backgroundColor: '#aca3fd'},
-                tabBarIcon: ({focused}) => <Ionicons name={iconName} size={32} color={focused ? '#f1bcf1' : 'blue '}/>
+                tabBarIcon: ({focused}) => <Ionicons name={iconName} size={32} color={focused ? '#f1bcf1' : 'blue'}/>
             }
 
         }} initialRouteName="Home">

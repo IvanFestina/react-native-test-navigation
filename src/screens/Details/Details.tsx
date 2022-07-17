@@ -6,7 +6,7 @@ export function DetailsScreen() {
     return (
         <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
             <Text>Details Screen</Text>
-            <Button title={'To Home screen'} onPress={() => navigation.navigate('Home')}>
+            <Button title={'To Home screen'} onPress={() => navigation.navigate('Home', {screen: 'Login'})}>
             </Button>
         </View>
     );

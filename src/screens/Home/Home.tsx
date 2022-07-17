@@ -10,7 +10,7 @@ const LoginScreen = () => {
         <View>
             <Text>Login Screen</Text>
             <Button title={'To Registration screen'} onPress={() => navigation.navigate('Home', {screen: 'Registration'})}/>
-            //мы сначала переходим на screen 'Home', а потом переходим на скрин Логин. Вложенная навигация.
+            {/*мы сначала переходим на screen 'Home', а потом переходим на скрин Логин. Вложенная навигация.*/}
             <Button title={'To Forgot screen'} onPress={() => navigation.navigate('Home', {screen: 'Forgot'})}/>
         </View>
     )
