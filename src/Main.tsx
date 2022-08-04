@@ -14,16 +14,17 @@ export const Main = () => {
     return (
         <Tab.Navigator screenOptions={({navigation, route}) => {
             let iconName: keyof typeof Ionicons.glyphMap
-            if(route.name === 'Home') iconName = 'analytics'
-            if(route.name === 'Users') iconName = 'bug'
-            if(route.name === 'Details') iconName = 'car-sport'
+            if (route.name === 'Home') iconName = 'analytics'
+            if (route.name === 'Users') iconName = 'bug'
+            if (route.name === 'Details') iconName = 'car-sport'
 
             return {
                 tabBarStyle: {backgroundColor: '#aca3fd'},
-                tabBarIcon: ({focused}) => <Ionicons name={iconName} size={32} color={focused ? '#f1bcf1' : 'blue'}/>
+                tabBarIcon: ({focused}) => <Ionicons name={iconName} size={32}
+                                                     color={focused ? '#f1bcf1' : 'blue'}/>
             }
-
-        }} initialRouteName="Home">
+        }}
+                       initialRouteName="Home">
             <Tab.Screen name="Home" component={HomeScreen} options={{title: 'Overview'}}/>
             <Tab.Screen name="Users" component={UsersScreen}/>
             <Tab.Screen name="Details" component={DetailsScreen}/>
