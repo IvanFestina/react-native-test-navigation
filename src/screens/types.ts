@@ -13,7 +13,7 @@ export type RootStackParamList = {
     Users: {id: number, name: string} | undefined;
     Details: undefined;
 };
-export type RootType = {
+export type RootType  = {
     Login: undefined
     Registration: undefined
     Forgot: undefined
