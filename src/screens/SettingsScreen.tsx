@@ -1,6 +1,6 @@
 import React from 'react';
-import {Button, View, Text} from "react-native";
-import {DialogsType, ProfileType, SettingsType, useAppNavigation} from "../types/types";
+import {Button, Text, View} from "react-native";
+import {SettingsType, useAppNavigation} from "../types/types";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import {styles} from "./ProfileScreen";
 
